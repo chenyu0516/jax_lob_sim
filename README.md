@@ -10,8 +10,8 @@ The limit order book data is crucial to a lot of application in finance engineer
 From the base paper, the data should be large-tick assets
 Our data will include stocks (INTC, VZ, T and PFE collected from Databento(just like what paper did)), cyptomarket (BTCUSDT, ETHUSDT, collected from [Coinbase API](https://www.coinapi.io/blog/full-order-book-data-in-crypto))
 
-2. Build the base model:  queue-reactive (QR) model by Jax [Huang et al. (2015)](https://arxiv.org/pdf/1312.0563)
+2. Preprocess of data: `src.estimate` for the detail see [code doc](code_base.md) Due: 5/8
 
-3. Do the improvement contribution that the base paper did, i.e. latency and market impact improvement
+3. Model building, Due: 5/21
 
-4. Compare the result (Time spending, quality of data) with [the base paper's code](https://github.com/SaadSouilmi/Queue-Reactive) and [JAX_LOB](https://dl.acm.org/doi/abs/10.1145/3604237.3626880)
+4. Compare the result (Time spending, quality of data) with [the base paper's code](https://github.com/SaadSouilmi/Queue-Reactive) and [JAX_LOB](https://dl.acm.org/doi/abs/10.1145/3604237.3626880) Due: 5/31
